@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #a6eda9; /* Nouvelle couleur pour le titre */
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  th {
+    background-color: #a6eda9; /* Nouvelle couleur pour l'en-tête */
+    color: #fff;
+    font-weight: 300;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .btn-validate {
+    background-color: #4caf50; /* Vert */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-validate:hover {
+    background-color: #45a049;
+  }
+</style>
+<title>Page d'Administration</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Tableau de Bord Administratif</h1>
+    <table>
+      <tr>
+        <th>Réf</th>
+        <th>Objet</th>
+        <th>Type</th>
+        <th>Détails</th>
+        <th>Expéditeur</th>
+        <th>Destinataire</th>
+        <th>Dec scanné</th>
+        <th>Traitement</th>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Demande de partenariat</td>
+        <td>Courrier Entrant</td>
+        <td>Proposition de collaboration commerciale</td>
+        <td>Entreprise F</td>
+        <td>Direction Générale</td>
+        <td><a href="Abir BenBrahem-cv.pdf" download>Document</a></td>
+        <td><button class="btn-validate">Valider</button></td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Problème technique</td>
+        <td>Assistance</td>
+        <td>L'imprimante du 3ème étage est en panne</td>
+        <td>Personne P</td>
+        <td>Service Informatique</td>
+        <td><a href="Abir BenBrahem-cv.pdf" download>Document</a></td>
+        <td><button class="btn-validate">Valider</button></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
